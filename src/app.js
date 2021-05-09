@@ -1,3 +1,8 @@
+import './logger';
+process.on('unhandledRejection', (error) => {
+    console.error(error);
+});
+
 import ObsSwitcher from "./components/ObsSwitcher";
 import Chat from "./components/Chat";
 import NodeMediaServer from "./components/NodeMediaServer";
@@ -24,7 +29,7 @@ const obs = new ObsSwitcher(
 );
 
 if (config.twitchChat.enable) {
-    const chat = new Chat(
+    new Chat(
         config.twitchChat.botUsername,
         config.twitchChat.oauth,
         config.twitchChat.channel,
@@ -32,4 +37,4 @@ if (config.twitchChat.enable) {
     );
 }
 
-const nodeMediaServer = new NodeMediaServer(config.nodeMediaServer, obs);
+new NodeMediaServer(config.nodeMediaServer, obs);

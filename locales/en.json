@@ -1,25 +1,25 @@
 {
     "start": {
-        "success": "Successfully started stream",
+        "success": "Stream iniciado correctamente",
         "error": "Error: {error}"
     },
     "stop": {
-        "success": "Successfully stopped stream",
+        "success": "Stream parado correctamente",
         "error": "Error: {error}"
     },
     "switch": {
-        "success": "Scene successfully switched to \"{scene}\"",
-        "error": "No scene specified"
+        "success": "Escena cambada a \"{scene}\"",
+        "error": "No se ha especificado una escena"
     },
     "bitrate": {
-        "success_rtt": "Current bitrate: {bitrate} Kbps, RTT {rtt} ms",
-        "success": "Current bitrate: {bitrate} Kbps",
-        "error": "Current bitrate: offline"
+        "success_rtt": "Bitrate: {bitrate} Kbps, RTT {rtt} ms",
+        "success": "Bitrate: {bitrate} Kbps",
+        "error": "Bitrate: offline"
     },
     "refresh": {
-        "success": "Refreshing stream",
-        "error": "Error refreshing stream",
-        "done": "Refreshing stream completed"
+        "success": "Actualizando stream",
+        "error": "Error al actualizar stream",
+        "done": "Stream actualizado!"
     },
     "trigger": {
         "success": "Trigger successfully set to {number} Kbps",
