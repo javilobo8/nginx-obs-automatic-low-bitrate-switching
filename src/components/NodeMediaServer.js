@@ -1,6 +1,7 @@
 import NodeMediaServer from 'node-media-server';
 import signale from "signale";
-import config from "../../config";
+
+import config from "../config";
 
 class NodeMediaServerManager {
     constructor(nmsConfig, obsSwitcher) {

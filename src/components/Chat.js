@@ -1,10 +1,11 @@
 import WebSocket from "ws";
-import config from "../../config";
 import fs from "fs";
 import signale from "signale";
 import { search } from "fast-fuzzy";
 import fetch from "node-fetch";
 import format from "string-template";
+
+import config from "../config";
 
 signale.config({
     displayTimestamp: true,
@@ -688,7 +689,7 @@ class Chat {
     getLanguage() {
         if (config.language != null) this.language = config.language;
 
-        fs.readFile(`${__dirname}/../../locales/${this.language}.json`, "utf8", (err, data) => {
+        fs.readFile(`./locales/${this.language}.json`, "utf8", (err, data) => {
             if (err) {
                 log.error(`Error loading language "${this.language}"`);
                 process.exit();

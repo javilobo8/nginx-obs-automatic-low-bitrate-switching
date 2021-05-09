@@ -8,5 +8,6 @@ const OUTPUT = './bin';
   await pkg.exec('.');
   fs.copySync('./locales', `${OUTPUT}/locales`);
   fs.copySync('./nginx', `${OUTPUT}/nginx`);
+  fs.copySync('./config-production.json', `${OUTPUT}/config.json`);
   console.log('Done');
 })();

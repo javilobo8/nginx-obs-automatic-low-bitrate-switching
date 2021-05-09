@@ -1,5 +1,7 @@
 bin
 lib
+config-production.json
+
 # Logs
 logs
 *.log

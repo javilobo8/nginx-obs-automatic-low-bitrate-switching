@@ -1,13 +1,18 @@
 import './logger';
+
 process.on('unhandledRejection', (error) => {
+    console.error(error);
+});
+
+process.on('uncaughtException', (error) => {
     console.error(error);
 });
 
 import ObsSwitcher from "./components/ObsSwitcher";
 import Chat from "./components/Chat";
 import NodeMediaServer from "./components/NodeMediaServer";
-import config from "../config";
 import { version } from "../package.json";
+import config from './config';
 
 console.log(`
     ███╗   ██╗ ██████╗  █████╗ ██╗     ██████╗ ███████╗

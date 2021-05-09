@@ -1,9 +1,10 @@
 import OBSWebSocket from "obs-websocket-js";
 import fetch from "node-fetch";
 import xml2js from "xml2js";
-import config from "../../config";
 import EventEmitter from "events";
 import signale from "signale";
+
+import config from "../config";
 
 signale.config({
     displayTimestamp: true,

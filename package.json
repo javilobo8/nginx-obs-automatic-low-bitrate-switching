@@ -9,7 +9,7 @@
     "start": "node ./lib/app",
     "build": "babel src -d lib",
     "dev": "nodemon --exec babel-node ./src/app.js",
-    "build-exe": "node ./scripts/build.js"
+    "build-exe": "npm run build && node ./scripts/build.js"
   },
   "author": "Brian Spit",
   "license": "MIT",
@@ -36,10 +36,6 @@
     "rimraf": "^3.0.2"
   },
   "pkg": {
-    "assets": [
-      "locales",
-      "nginx"
-    ],
     "targets": [
       "node14-win-x64"
     ],
